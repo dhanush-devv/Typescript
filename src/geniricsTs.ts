@@ -21,3 +21,12 @@ interface Box<T>{
 const numberBox:Box<number>={
     content:10
 }
+interface ApiPromise<T>{
+    status:number,
+    data:T
+}
+
+const res:ApiPromise<{flavor:string}>={
+    status:200,
+    data:{flavor:"masala"}
+}
